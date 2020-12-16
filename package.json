@@ -20,5 +20,14 @@
   "bugs": {
     "url": "https://github.com/d-beloved/webly-scrapr/issues"
   },
-  "homepage": "https://github.com/d-beloved/webly-scrapr#readme"
+  "homepage": "https://github.com/d-beloved/webly-scrapr#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "node-fetch": "^2.6.1",
+    "node-mailer": "^0.1.1",
+    "puppeteer": "^5.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }

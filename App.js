@@ -24,9 +24,10 @@ function getLatestHeadline(data) {
     Titles.push({title : $(el).text() ,link : $(el).children('a').attr('href') })
   })
 
-  return Titles;
+  return Titles[0];
 }
 
 getFromSite((data) => {
-  console.log(getLatestHeadline(data));
+  const latestHeadline = getLatestHeadline(data);
+  if(latestHeadline.title.includes(string)) console.log('Article on Trump released', latestHeadline);
 });

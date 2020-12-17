@@ -27,7 +27,9 @@ function getLatestHeadline(data) {
   return Titles[0];
 }
 
-getFromSite((data) => {
-  const latestHeadline = getLatestHeadline(data);
-  if(latestHeadline.title.includes(string)) console.log('Article on Trump released', latestHeadline);
-});
+setInterval(() => {
+  getFromSite((data) => {
+    const latestHeadline = getLatestHeadline(data);
+    if(latestHeadline.title.includes(string)) console.log('Article on Trump released', latestHeadline);
+  })
+}, 5 * 1000);
